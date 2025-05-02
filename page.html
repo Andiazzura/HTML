@@ -1,22 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <section< id="countainer" style="display: flex; height: 100vh;">
-     <section<="navigation" style="background-color: pink"; width: 15%>
-        <h1 style="text-align: center">connect</h1>
-       <div style="display: flex; flex-direction: column; gap: 8px">
-          <button>User</button>
-          <button>Hak Akses</button>
-          <button>LogOut</button>
-        </div style="display: flex; flex direction: column; gap: 8px">
-      </section>
-      <section id="content" style="background-color: aqua"></section>
-      <input type="search" placeholder="cari user" />
-    </section>
-  </body>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Connect</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-gray-800">
+
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white p-6">
+      <h1 class="text-3xl font-bold mb-10">Connect</h1>
+      <nav class="flex flex-col gap-4">
+        <button class="bg-black text-white py-2 px-4 rounded text-left font-semibold">User</button>
+        <button class="hover:bg-gray-200 py-2 px-4 rounded text-left">Hak Akses</button>
+        <button class="hover:bg-gray-200 py-2 px-4 rounded text-left">Logout</button>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 bg-white rounded-tl-3xl p-8">
+      
+      <!-- Search -->
+      <div class="mb-6">
+        <input type="text" placeholder="Cari user" class="w-full border p-2 rounded" />
+      </div>
+
+      <!-- User Cards -->
+      <div class="space-y-4">
+        <!-- Item 1 -->
+        <div class="border p-4 rounded shadow-sm">
+          <div class="flex justify-between items-start">
+            <div>
+              <h2 class="font-semibold">Andi Azzura Rahma </h2>
+              <p class="text-sm text-gray-500">2313043@students.universitasmulia.ac.id</p>
+              <div class="flex gap-2 mt-2">
+                <span class="bg-black text-white text-xs px-2 py-1 rounded">Admin</span>
+                <span class="bg-gray-300 text-xs px-2 py-1 rounded">Employee</span>
+              </div>
+            </div>
+            <p class="text-green-600 font-semibold">Aktif</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="border p-4 rounded shadow-sm">
+          <div class="flex justify-between items-start">
+            <div>
+              <h2 class="font-semibold">Lintang</h2>
+              <p class="text-sm text-gray-500">lintang@universitasmulia.ac.id</p>
+              <span class="bg-gray-300 text-xs px-2 py-1 rounded inline-block mt-2">Employee</span>
+            </div>
+            <p class="text-green-600 font-semibold">Aktif</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="border p-4 rounded shadow-sm">
+          <div class="flex justify-between items-start">
+            <div>
+              <h2 class="font-semibold">Shafira</h2>
+              <p class="text-sm text-gray-500">shafira@universitasmulia.ac.id</p>
+              <span class="bg-gray-300 text-xs px-2 py-1 rounded inline-block mt-2">Employee</span>
+            </div>
+            <p class="text-green-600 font-semibold">Aktif</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="border p-4 rounded shadow-sm">
+          <div class="flex justify-between items-start">
+            <div>
+              <h2 class="font-semibold">Lebah Ganteng</h2>
+              <p class="text-sm text-gray-500">lebahganteng@universitasmulia.ac.id</p>
+              <span class="bg-gray-300 text-xs px-2 py-1 rounded inline-block mt-2">Employee</span>
+            </div>
+            <p class="text-red-600 font-semibold">Suspended</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Add Button -->
+      <button class="fixed bottom-6 right-6 bg-gray-300 hover:bg-gray-400 text-white text-xl rounded-full w-12 h-12 shadow-md">
+        +
+      </button>
+    </main>
+  </div>
+
+</body>
 </html>
